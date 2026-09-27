@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #142c47;
+    background: #f8f7f2;
+}
+
+/* Navigation */
+
+nav {
+    width: 100%;
+    height: 65px;
+    background: #102944;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6%;
+    color: white;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #69c5f2;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 400px;
+    background: linear-gradient(120deg, #102944, #1d426b);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 6% 0;
+    overflow: hidden;
+    color: white;
+}
+
+.hero-content {
+    width: 55%;
+    padding-bottom: 40px;
+    z-index: 1;
+}
+
+.subtitle,
+.section-label {
+    color: #2782c7;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.hero .subtitle {
+    color: #83c6ef;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+.hero h2 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.line {
+    width: 60px;
+    height: 3px;
+    background: #55b8ed;
+    margin: 25px 0;
+}
+
+.hero p {
+    font-size: 17px;
+    max-width: 450px;
+    line-height: 1.7;
+}
+
+.hero-image {
+    width: 40%;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+/* About Section */
+
+.about {
+    padding: 55px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: #f8f7f2;
+}
+
+.about-text {
+    width: 58%;
+}
+
+.about h2,
+.section-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin: 8px 0 15px;
+}
+
+.about-text p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.about-image {
+    width: 38%;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 7px;
+    box-shadow: 0 5px 20px #00000020;
+}
+
+.image-caption {
+    margin-top: 15px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Achievements */
+
+.achievements {
+    padding: 50px 5%;
+    background: #e5f3fc;
+}
+
+.section-heading {
+    margin: 0 0 25px 3%;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.card {
+    position: relative;
+    background: #ffffff;
+    padding: 25px 18px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px #0000000a;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #00000018;
+}
+
+.number {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background: #2865b8;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.icon {
+    font-size: 32px;
+    margin: 5px 0 15px;
+}
+
+.card h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.year {
+    font-size: 13px;
+    color: #2768a8;
+    font-weight: 500;
+}
+
+.card p {
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: 15px;
+}
+
+/* Quote Section */
+
+.quote {
+    padding: 45px 15%;
+    text-align: center;
+    background: #10345b;
+    color: white;
+}
+
+.quote-mark {
+    font-family: Georgia, serif;
+    font-size: 65px;
+    height: 55px;
+    color: #8bc8ed;
+}
+
+blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.quote p {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background: #f8f7f2;
+    padding: 30px 10%;
+}
+
+footer h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+footer > p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.rest {
+    margin: 25px 0 15px;
+    color: #2865b8;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.footer-bottom {
+    margin-top: 25px;
+    padding: 15px;
+    background: #102944;
+    color: white;
+    border-radius: 5px;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .timeline {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .card:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        height: auto;
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 6% 0;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .hero p {
+        font-size: 15px;
+        margin: auto;
+    }
+
+    .line {
+        margin: 20px auto;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 40px 7%;
+        gap: 25px;
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+
+    .about h2,
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .about-image img {
+        height: 250px;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+
+    .card:last-child {
+        grid-column: auto;
+    }
+
+    .achievements {
+        padding: 40px 7%;
+    }
+
+    .section-heading {
+        margin-left: 0;
+    }
+
+    .quote {
+        padding: 40px 8%;
+    }
+
+    blockquote {
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 30px 7%;
+    }
+}
+
+/* Scroll Animation */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Back to Top Button */
+
+.top-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #2865b8;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.top-button.visible {
+    display: block;
+}
+
+.top-button:hover {
+    background: #102944;
+    transform: translateY(-5px);
+}
+
+/* Active Navigation */
+
+nav ul li a.active {
+    color: #69c5f2;
+    border-bottom: 2px solid #69c5f2;
+    padding-bottom: 5px;
+}
+
+/* Dark Mode Button */
+
+.dark-button {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 7px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+    background: #121212;
+    color: #f5f5f5;
+}
+
+.dark-mode .about,
+.dark-mode footer {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .achievements {
+    background: #252525;
+}
+
+.dark-mode .card {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .card p,
+.dark-mode .about-text p {
+    color: #ddd;
+}
+
+.dark-mode .year {
+    color: #80caff;
+}
+
+.dark-mode .image-caption {
+    color: #ddd;
+}
